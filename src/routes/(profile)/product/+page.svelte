@@ -1,32 +1,62 @@
 <script lang="ts">
 	import ContentCard from '$components/profile/ContentCard.svelte';
+	import Container from '$components/common/Container.svelte';
+	import FlexContents from '$components/common/FlexContents.svelte';
+	import FlameImg from '$components/common/FlameImg.svelte';
+	import blog from '$lib/assets/blog.png';
+	import webworkbook from '$lib/assets/webworkbook.png';
 </script>
 
-<ContentCard title="About This Site">
-	<div>こんにちは！ここは、strt9973が自己紹介するためののプロフィールサイトです。</div>
-	<div>現状のスキルや制作物などを記載しています。</div>
+<ContentCard title="Product">
+	<div>ここでは、プライベートで開発したものを紹介します。</div>
 </ContentCard>
 
-<ContentCard title="About Me">
-	<div>私はこんな人です。</div>
-	<ul>
-		<li>現職：Webアプリケーションエンジニア</li>
-		<li>経歴1：インフラ運用保守エンジニアとして勤務(2014〜2018)</li>
-		<li>経歴2：システムエンジニアとしてECサイト開発会社で勤務(2018〜2021)</li>
-		<li>経歴3：開発エンジニアとしてBtoB自社開発企業で勤務(2021〜)</li>
-	</ul>
+<ContentCard title="このサイト">
+	<Container flex={true} padding_lr={0}>
+		<FlexContents>
+			<div>
+				コミュニティに参加した際の自己紹介をサクッとやったり、アプリをリリースする際の紹介ページなどをつくる目的で作りました。<br
+				/>
+				SvelteやCloudflareを触ってみたかったので技術スタックとして採用しました。<br />
+				また、業務ではReact + UIコンポーネントを使って作ることが多いので、SCSSを採用しています。<br
+				/>
+				ダークモードではブループリントっぽく、ライトモードでは方眼紙っぽくしています。
+			</div>
+		</FlexContents>
+		<FlexContents><div>利用技術: Svelte/SvelteKit/SCSS/Cloudflare Pages</div></FlexContents>
+	</Container>
 </ContentCard>
-<ContentCard title="Guide">
-	<div>Icebreak</div>
-	<div>趣味や特技、好きなことについて書いてあります。</div>
-	<div>もしお話しすることがあれば、アイスブレイクのネタとしてご覧ください。</div>
-	<div>Skill</div>
-	<div>今までに経験した技術や、現状勉強中の技術についてまとめています。</div>
-	<div>Product</div>
-	<div>制作物についてまとめています。</div>
-	<div>Blog</div>
-	<div>Blogも運用しているので、ご興味があればどうぞ（外部リンクです）。</div>
+<ContentCard title="ブログ(リファクタ中)">
+	<Container flex={true} padding_lr={0}>
+		<FlexContents>
+			<FlameImg src={blog} />
+			<div>
+				勉強したことや趣味などをまとめておく場所が欲しかったので作りました。Next.jsを触っておきたかったので技術スタックとして採用しました。<br
+				/>
+				また、Contentfulはある程度自由にContent Modelを作れて無料なので、取り回し良さそうと思ったのが採用理由です。<br
+				/>
+				App RouterなのにUIコンポーネント(Chakra)を入れてしまい全部クライアントコンポーネントになっちゃってるので、置き換えたりする予定です。
+			</div>
+		</FlexContents>
+		<FlexContents><div>利用技術: Next.js(App Router)/Contentful/Vercel</div></FlexContents>
+	</Container>
+</ContentCard>
+<ContentCard title="Web問題集管理アプリ(開発中)">
+	<Container flex={true} padding_lr={0}>
+		<FlexContents>
+			<FlameImg src={webworkbook} />
+			<div>
+				LeetCodeを解くようになってから、一度解いた問題をある程度忘却曲線に添いつつ復習したりするために作っています。<br
+				/>
+				Web公開しないでいいデスクトップアプリをWeb技術で作りたい+あわよくばスマホアプリも作れるようになっておきたい、という理由でTauriを使っています。
+			</div>
+		</FlexContents>
+		<FlexContents><div>利用技術: Tauri/React/Mantine UI/SQLite</div></FlexContents>
+	</Container>
 </ContentCard>
 
 <style lang="scss">
+	div {
+		padding: 16px;
+	}
 </style>

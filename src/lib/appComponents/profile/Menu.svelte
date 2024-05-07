@@ -8,7 +8,7 @@
 	<MenuCard title="Icebreak" color="orange" path="/icebreak" />
 	<MenuCard title="Skill" color="yellow" path="/skill" />
 	<MenuCard title="Product" color="green" path="/product" />
-	<MenuCard title="Blog" color="blue" path="/" path_target="blank" />
+	<MenuCard title="Blog" color="blue" path="https://blog.strt9973.net/" path_target="blank" />
 </Container>
 
 <style lang="scss">
