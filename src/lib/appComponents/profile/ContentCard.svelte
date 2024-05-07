@@ -5,7 +5,7 @@
 
 <div class="{`card-${$isDarkMode ? 'dark' : 'light'}`} card-root">
 	<div class="subtitle">
-		<p>{title}</p>
+		<h2>{title}</h2>
 	</div>
 	<div class="content">
 		<slot />
@@ -25,7 +25,7 @@
 	.card-root {
 		margin-bottom: 16px;
 	}
-	p {
+	h2 {
 		margin: 0;
 		font-size: 1.2rem;
 		padding: 8px;
@@ -37,9 +37,6 @@
 		box-sizing: border-box;
 		.subtitle {
 			border-bottom: 0.5px solid $dark-text-color;
-			p {
-				border-right: 0.5px solid $dark-text-color;
-			}
 		}
 	}
 	.card-light {
@@ -49,11 +46,11 @@
 		}
 		border-radius: 2px;
 		.subtitle {
-			p {
+			h2 {
 				position: relative;
 				z-index: 1;
 			}
-			p::after {
+			h2::after {
 				content: '';
 				position: absolute;
 				left: 8px;

@@ -62,14 +62,22 @@
 		border: none;
 	}
 	div {
-		min-width: 100px;
+		min-width: 65px;
+		@include respond-to('md') {
+			min-width: 100px;
+		}
 		height: 50px;
 		text-align: center;
 	}
 	p {
 		margin: 0;
 		line-height: 50px;
-		font-size: 1.2rem;
+		@include respond-to('sm') {
+			font-size: 0.9rem;
+		}
+		@include respond-to('md') {
+			font-size: 1.2rem;
+		}
 	}
 	.card-dark {
 		border: 0.5px double $dark-text-color;

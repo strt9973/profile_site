@@ -11,8 +11,8 @@
 
 <ContentCard title="Skill">
 	<div>ここでは、主に技術の使用経験を紹介します。</div>
-	<div>見方</div>
-	<Container flex={true}>
+
+	<Container flex={true} padding_lr={0}>
 		<FlexContents>
 			<SkillCardSample />
 		</FlexContents>
@@ -59,11 +59,4 @@
 </ContentCard>
 
 <style lang="scss">
-	.explanation {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-	}
 </style>

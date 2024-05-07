@@ -9,11 +9,15 @@
 	<slot />
 </div>
 
-<style :lang(scss)>
+<style lang="scss">
 	div {
 		&.containerStyle {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
+			@include respond-to('sm') {
+				justify-content: space-between;
+			}
+			flex-wrap: wrap;
 		}
 	}
 </style>

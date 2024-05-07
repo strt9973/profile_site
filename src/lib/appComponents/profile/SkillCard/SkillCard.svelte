@@ -55,7 +55,7 @@
 
 <style lang="scss">
 	div {
-		width: 250px;
+		width: 100%;
 		height: fit-content;
 		text-align: center;
 	}

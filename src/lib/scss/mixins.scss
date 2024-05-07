@@ -1,0 +1,19 @@
+// Break Point
+$breakpoints: (
+	'sm': 480px,
+	'md': 768px,
+	'lg': 1024px,
+	'xl': 1200px
+);
+
+@mixin respond-to($min-breakpoint, $max-breakpoint: null) {
+	@if $max-breakpoint == null {
+		@media (min-width: map-get($breakpoints, $min-breakpoint)) {
+			@content;
+		}
+	} @else {
+		@media (min-width: map-get($breakpoints, $min-breakpoint)) and (max-width: (map-get($breakpoints, $max-breakpoint) - 1px)) {
+			@content;
+		}
+	}
+}
