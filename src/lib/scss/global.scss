@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Makinas';
+	src: url('/Makinas-4-Flat.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Mamelon';
+	src: url('/Mamelon-3HiRegular.woff2') format('woff2');
+}
+
+:root {
+	box-sizing: border-box;
+}
+
+// light mode
+#light {
+	font-family: 'Mamelon', system-ui, sans-serif;
+	line-height: 1.5;
+	background-color: $background-color;
+	color: $text-color;
+	background-image: linear-gradient(to right, #ddd 1px, transparent 1px),
+		linear-gradient(to bottom, #ddd 1px, transparent 1px);
+	background-size: 20px 20px;
+	> * {
+		max-width: 1200px;
+		margin: 0px auto;
+		padding: 16px;
+	}
+}
+
+// dark mode
+#dark {
+	font-family: 'Makinas', system-ui, sans-serif;
+	line-height: 1.5;
+	color: $dark-text-color;
+	background-image: radial-gradient(
+			circle at center,
+			rgba($dark-background-color, 0.85),
+			rgba($dark-background-color-deep, 1) 95%
+		),
+		linear-gradient(to right, #bdc5dd 1px, transparent 1px),
+		linear-gradient(to bottom, #bdc5dd 1px, transparent 1px);
+	background-size:
+		cover,
+		20px 20px,
+		20px 20px;
+	background-position:
+		center,
+		0 0,
+		0 0;
+	background-repeat: no-repeat, repeat, repeat;
+	> * {
+		max-width: 1200px;
+		margin: 0px auto;
+		padding: 16px;
+	}
+}
