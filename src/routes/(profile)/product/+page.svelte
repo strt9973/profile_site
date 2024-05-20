@@ -36,13 +36,21 @@
 		<div>利用技術: Next.js(App Router)/Contentful/Vercel</div>
 	</Container>
 </ContentCard>
-<ContentCard title="Web問題集管理アプリ(開発中)">
+<ContentCard title="Web問題集管理アプリ">
 	<Container padding_lr={0}>
 		<FlameImg src={webworkbook} />
 		<div>
 			LeetCodeを解くようになってから、一度解いた問題をある程度忘却曲線に添いつつ復習したりするために作っています。<br
 			/>
-			Web公開しないでいいデスクトップアプリをWeb技術で作りたい+あわよくばスマホアプリも作れるようになっておきたい、という理由でTauriを使っています。
+			Web公開しないでいいデスクトップアプリをWeb技術で作りたい+あわよくばスマホアプリも作れるようになっておきたい、という理由でTauriを使っています。<br
+			/>
+			詳細・ダウンロードは<a
+				href="https://github.com/strt9973/web_workbook_management_app"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				こちら(Github)
+			</a>から可能です。
 		</div>
 	</Container>
 	<div>利用技術: Tauri/React/Mantine UI/SQLite</div>
@@ -51,5 +59,8 @@
 <style lang="scss">
 	div {
 		padding: 16px;
+	}
+	a {
+		color: inherit;
 	}
 </style>
