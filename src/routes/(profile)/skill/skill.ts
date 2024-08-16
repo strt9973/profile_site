@@ -143,6 +143,13 @@ export const private_skills: {
 		month: 2
 	},
 	{
+		skill_name: 'Ruby',
+		rate: 1,
+		icon: IconCode,
+		skill_type: 'lang',
+		month: 1
+	},
+	{
 		skill_name: 'Tauri',
 		rate: 3,
 		icon: IconDeviceDesktop,
@@ -155,6 +162,13 @@ export const private_skills: {
 		icon: IconBrandNextjs,
 		skill_type: 'front',
 		month: 8
+	},
+	{
+		skill_name: 'Ruby on Rails',
+		rate: 1,
+		icon: IconCode,
+		skill_type: 'front',
+		month: 1
 	},
 	{
 		skill_name: 'Svelte',
