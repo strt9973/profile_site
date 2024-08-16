@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ContentCard from '$components/profile/ContentCard.svelte';
 	import Container from '$components/common/Container.svelte';
-	import FlexContents from '$components/common/FlexContents.svelte';
 	import FlameImg from '$components/common/FlameImg.svelte';
 	import blog from '$lib/assets/blog.png';
 	import webworkbook from '$lib/assets/webworkbook.png';
@@ -23,7 +22,7 @@
 		<div>利用技術: Svelte/SvelteKit/SCSS/Cloudflare Pages</div>
 	</Container>
 </ContentCard>
-<ContentCard title="ブログ(リファクタ中)">
+<ContentCard title="ブログ">
 	<Container padding_lr={0}>
 		<FlameImg src={blog} />
 		<div>
@@ -31,7 +30,11 @@
 			/>
 			また、Contentfulはある程度自由にContent Modelを作れて無料なので、取り回し良さそうと思ったのが採用理由です。<br
 			/>
-			App RouterなのにUIコンポーネント(Chakra)を入れてしまい全部クライアントコンポーネントになっちゃってるので、置き換えたりする予定です。
+			<s
+				>App
+				RouterなのにUIコンポーネント(Chakra)を入れてしまい全部クライアントコンポーネントになっちゃってるので、置き換えたりする予定です。</s
+			><br />
+			CSS Modulesで書き直しました。
 		</div>
 		<div>利用技術: Next.js(App Router)/Contentful/Vercel</div>
 	</Container>
