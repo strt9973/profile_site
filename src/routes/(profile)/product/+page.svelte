@@ -7,7 +7,7 @@
 </script>
 
 <ContentCard title="Product">
-	<div>ここでは、プライベートで開発したものを紹介します。</div>
+	<div>ここでは、プライベートで開発して公開しているものを紹介します。</div>
 </ContentCard>
 
 <ContentCard title="このサイト">
@@ -30,11 +30,6 @@
 			/>
 			また、Contentfulはある程度自由にContent Modelを作れて無料なので、取り回し良さそうと思ったのが採用理由です。<br
 			/>
-			<s
-				>App
-				RouterなのにUIコンポーネント(Chakra)を入れてしまい全部クライアントコンポーネントになっちゃってるので、置き換えたりする予定です。</s
-			><br />
-			CSS Modulesで書き直しました。
 		</div>
 		<div>利用技術: Next.js(App Router)/Contentful/Vercel</div>
 	</Container>
@@ -57,6 +52,18 @@
 		</div>
 	</Container>
 	<div>利用技術: Tauri/React/Mantine UI/SQLite</div>
+</ContentCard>
+<ContentCard title="アイコン作成ツール">
+	<Container padding_lr={0}>
+		<div>
+			PWAで個人用ツールを作ろうと思った時に、PWA用のアイコンへの加工を手軽に実施するためにGoの勉強がてら作りました。<br
+			/>正方形の画像を、複数のサイズの角丸アイコンに変換できるツールです。<br />
+			<a href="https://github.com/strt9973/icon-maker" target="_blank" rel="noopener noreferrer">
+				こちら(Github)
+			</a>から利用可能です。
+		</div>
+		<div>利用技術:Golang</div>
+	</Container>
 </ContentCard>
 
 <style lang="scss">

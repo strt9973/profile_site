@@ -3,6 +3,7 @@ import IconBrandCloudflare from '@tabler/icons-svelte/IconBrandCloudflare.svelte
 import IconBrandDjango from '@tabler/icons-svelte/IconBrandDjango.svelte';
 import IconBrandDocker from '@tabler/icons-svelte/IconBrandDocker.svelte';
 import IconBrandGit from '@tabler/icons-svelte/IconBrandGit.svelte';
+import IconBrandGolang from '@tabler/icons-svelte/IconBrandGolang.svelte';
 import IconBrandGraphql from '@tabler/icons-svelte/IconBrandGraphql.svelte';
 import IconBrandJavascript from '@tabler/icons-svelte/IconBrandJavascript.svelte';
 import IconBrandMysql from '@tabler/icons-svelte/IconBrandMysql.svelte';
@@ -33,7 +34,7 @@ export const work_skills: {
 		rate: 5,
 		icon: IconBrandTypescript,
 		skill_type: 'lang',
-		month: 40
+		month: 46
 	},
 	{
 		skill_name: 'Javascript',
@@ -50,6 +51,13 @@ export const work_skills: {
 		month: 45
 	},
 	{
+		skill_name: 'Ruby',
+		rate: 2,
+		icon: IconCode,
+		skill_type: 'lang',
+		month: 6
+	},
+	{
 		skill_name: 'C#',
 		rate: 2,
 		icon: IconCode,
@@ -61,7 +69,7 @@ export const work_skills: {
 		rate: 5,
 		icon: IconBrandReact,
 		skill_type: 'front',
-		month: 40
+		month: 46
 	},
 	{
 		skill_name: 'Express',
@@ -76,6 +84,13 @@ export const work_skills: {
 		icon: IconBrandDjango,
 		skill_type: 'backend',
 		month: 40
+	},
+	{
+		skill_name: 'Ruby on Rails',
+		rate: 2,
+		icon: IconCode,
+		skill_type: 'front',
+		month: 6
 	},
 	{
 		skill_name: 'GraphQL',
@@ -96,7 +111,7 @@ export const work_skills: {
 		rate: 3,
 		icon: IconBrandMysql,
 		skill_type: 'infra',
-		month: 40
+		month: 46
 	},
 	{
 		skill_name: 'DynamoDB',
@@ -117,14 +132,14 @@ export const work_skills: {
 		rate: 4,
 		icon: IconBrandGit,
 		skill_type: 'other',
-		month: 20
+		month: 42
 	},
 	{
 		skill_name: 'Docker',
 		rate: 4,
 		icon: IconBrandDocker,
 		skill_type: 'other',
-		month: 20
+		month: 42
 	}
 ];
 
@@ -143,13 +158,6 @@ export const private_skills: {
 		month: 2
 	},
 	{
-		skill_name: 'Ruby',
-		rate: 1,
-		icon: IconCode,
-		skill_type: 'lang',
-		month: 1
-	},
-	{
 		skill_name: 'Tauri',
 		rate: 3,
 		icon: IconDeviceDesktop,
@@ -157,18 +165,18 @@ export const private_skills: {
 		month: 2
 	},
 	{
+		skill_name: 'Go',
+		rate: 2,
+		icon: IconBrandGolang,
+		skill_type: 'lang',
+		month: 1
+	},
+	{
 		skill_name: 'Next.js',
 		rate: 3,
 		icon: IconBrandNextjs,
 		skill_type: 'front',
-		month: 8
-	},
-	{
-		skill_name: 'Ruby on Rails',
-		rate: 1,
-		icon: IconCode,
-		skill_type: 'front',
-		month: 1
+		month: 17
 	},
 	{
 		skill_name: 'Svelte',
@@ -182,13 +190,13 @@ export const private_skills: {
 		rate: 3,
 		icon: IconBrandVercel,
 		skill_type: 'infra',
-		month: 8
+		month: 12
 	},
 	{
 		skill_name: 'Cloudflare',
 		rate: 1,
 		icon: IconBrandCloudflare,
 		skill_type: 'infra',
-		month: 1
+		month: 6
 	}
 ];
